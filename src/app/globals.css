@@ -7,6 +7,8 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-dark-2: oklch(21.62% 0.0241 273.38);
+  --color-dark-1: oklch(24.35% 0.029 275.31);
 }
 
 :root {
