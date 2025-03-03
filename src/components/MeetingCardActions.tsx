@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 const MeetingCardActions = () => {
   const router = useRouter();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [meetingState, setmeetingState] = useState<
     "instant" | "scheduled" | "join" | undefined
   >(undefined);
