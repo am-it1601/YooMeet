@@ -27,7 +27,7 @@ const MobileNav = () => {
           />
         </SheetTrigger>
         <SheetContent side="left" className="bg-sidebar border-none">
-          <Link href="/" className="flex items-center gap-1 p-6">
+          <Link href="/" className="flex items-center gap-2 p-6">
             <Image
               width={32}
               height={32}
