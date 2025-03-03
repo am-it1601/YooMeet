@@ -27,15 +27,15 @@ const MobileNav = () => {
           />
         </SheetTrigger>
         <SheetContent side="left" className="bg-sidebar border-none">
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/" className="flex items-center gap-1 p-6">
             <Image
               width={32}
               height={32}
               alt="logo"
-              src={"/icons/home.gif"}
+              src={"/icons/logo.svg"}
               className="max-sm:size-10"
             />
-            <p className="text-[28px] font-extrabold text-primary max-sm:hidden">
+            <p className="text-[28px] font-extrabold text-sidebar-primary-foreground">
               YooMeet
             </p>
           </Link>
