@@ -1,27 +1,27 @@
 export const MENU_LINKS = [
   {
     label: "Home",
-    imgUrl: "/icons/home.gif",
+    imgUrl: "/icons/home.svg",
     route: "/",
   },
   {
     label: "Upcoming Meetings",
-    imgUrl: "/icons/tomorrow.png",
+    imgUrl: "/icons/upcoming.svg",
     route: "/upcoming",
   },
   {
     label: "Previous Meetings",
-    imgUrl: "/icons/yesterday.png",
+    imgUrl: "/icons/previous.svg",
     route: "/previous",
   },
   {
     label: "Recordings",
-    imgUrl: "/icons/recording.gif",
+    imgUrl: "/icons/Video.svg",
     route: "/recordings",
   },
   {
     label: "Personal Room",
-    imgUrl: "/icons/personal.gif",
+    imgUrl: "/icons/add-personal.svg",
     route: "/personal-room",
   },
 ];

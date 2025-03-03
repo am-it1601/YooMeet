@@ -9,7 +9,7 @@ import React from "react";
 const Sidebar = () => {
   const pathName = usePathname();
   return (
-    <section className="sticky left-0 top-0 flex-container h-screen w-fit flex-col justify-between bg-sidebar p-6 pt-28 text-sidebar-primary max-sm:hidden lg:w-[264px]">
+    <section className="sticky left-0 top-0 flex-container h-screen w-fit flex-col justify-between bg-sidebar p-6 pt-28 text-sidebar-foreground max-sm:hidden lg:w-[264px]">
       <div className="flex flex-1 flex-col gap-6">
         {MENU_LINKS.map((menu) => {
           console.log(pathName);
