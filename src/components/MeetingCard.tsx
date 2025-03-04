@@ -18,7 +18,7 @@ const MeetingCard = ({
   return (
     <div
       className={cn(
-        "meeting-box shadow-xl hover:animate-pulse shadow-primary/15",
+        "meeting-box shadow-xl hover:animate-pulse shadow-primary/15 text-white",
         className
       )}
       onClick={click}
@@ -34,7 +34,7 @@ const MeetingCard = ({
           />
         </div>
       )}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 text-white">
         <h1 className="text-2xl font-bold">{title}</h1>
         <p className="text-lg font-normal">{text}</p>
       </div>

@@ -3,13 +3,16 @@
 import React, { useState } from "react";
 import MeetingCard from "./MeetingCard";
 import { useRouter } from "next/navigation";
+import MeetingDialog from "./MeetingDialog";
 
 const MeetingCardActions = () => {
   const router = useRouter();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const [meetingState, setmeetingState] = useState<
     "instant" | "scheduled" | "join" | undefined
   >(undefined);
+
+  const createMeeting = () => {};
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
       <MeetingCard
@@ -39,6 +42,14 @@ const MeetingCardActions = () => {
         title="View Recordings"
         text="Watch out your past meeting Recordings"
         click={() => router.push("/recordings")}
+      />
+      <MeetingDialog
+        isOpen={meetingState === "instant"}
+        onClose={() => setmeetingState(undefined)}
+        title="Start an Instant Meeting"
+        className="text-center"
+        btnText="Start Meeting"
+        onClick={createMeeting}
       />
     </section>
   );
