@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import React, { useState } from "react";
@@ -18,7 +19,11 @@ const MeetingCardActions = () => {
 
   const { user } = useUser();
   const videoClient = useStreamVideoClient();
-  const [metadata, setMetaData] = useState<>({
+  const [metadata, setMetaData] = useState<{
+    dateTime: Date | undefined;
+    description?: string;
+    meetingLink?: string;
+  }>({
     dateTime: new Date(),
     description: "",
     meetingLink: "",
