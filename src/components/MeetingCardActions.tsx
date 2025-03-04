@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import MeetingDialog from "./MeetingDialog";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
+import { toast } from "sonner";
+import { CircleCheckBig, CircleX } from "lucide-react";
 
 const MeetingCardActions = () => {
   const router = useRouter();
@@ -26,6 +28,10 @@ const MeetingCardActions = () => {
   const createMeeting = async () => {
     if (!user || !videoClient) return;
     try {
+      if (!metadata.dateTime) {
+        toast.error("Please select a Date Time");
+        return;
+      }
       const id = crypto.randomUUID();
       const call = videoClient.call("default", id);
       if (!call) throw new Error("Failed to create a call");
@@ -42,9 +48,20 @@ const MeetingCardActions = () => {
         },
       });
       setVideoCallDetails(call);
+
       if (!metadata.description) router.push(`/meeting/${call.id}`);
+      toast.success("Meeting Scheduled", {
+        icon: <CircleCheckBig className="w-6 h-6" />,
+        description: "Redirecting to Meeting Room.",
+        duration: 5000,
+        className: "px-4",
+      });
     } catch (error) {
       console.log(error);
+      toast.error("Failed to Create Meeting", {
+        icon: <CircleX className="w-24 h-24" />,
+        description: "Something went wrong while creating a new Meeting",
+      });
     }
   };
   return (
