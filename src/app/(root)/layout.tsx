@@ -6,7 +6,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main>
       <StreamVideoProvider>{children}</StreamVideoProvider>
-      <Toaster richColors />
     </main>
   );
 };
