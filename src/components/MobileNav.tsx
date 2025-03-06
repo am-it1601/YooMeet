@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 const MobileNav = () => {
   const pathName = usePathname();
   return (
-    <section className="w-full max-w-[275px]">
+    <section className="w-full max-w-[120px]">
       <Sheet>
         <SheetTrigger asChild>
           <Image

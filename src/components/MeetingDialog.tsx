@@ -47,7 +47,7 @@ const MeetingDialog = ({
             {btnIcon && (
               <Image src={btnIcon} alt="btn_icon" width={12} height={12} />
             )}
-            {btnText || "Schedule Meetign"}
+            {btnText || "Schedule Meeting"}
           </Button>
         </div>
       </DialogContent>
