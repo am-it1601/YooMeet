@@ -10,6 +10,7 @@ import { toast } from "sonner";
 import { CircleCheckBig, CircleX } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import ReactDatePicker from "react-datepicker";
+import { Input } from "./ui/input";
 const MeetingCardActions = () => {
   const router = useRouter();
 
@@ -175,6 +176,22 @@ const MeetingCardActions = () => {
         btnText="Start Meeting"
         onClick={createMeeting}
       />
+      <MeetingDialog
+        isOpen={meetingState === "join"}
+        onClose={() => setmeetingState(undefined)}
+        title="Type the link here"
+        className="text-center"
+        btnText="Join Meeting"
+        onClick={() => router.push(metadata.meetingLink!)}
+      >
+        <Input
+          placeholder="Meeting link"
+          onChange={(e) =>
+            setMetaData({ ...metadata, meetingLink: e.target.value })
+          }
+          className="border-none bg-sidebar focus-visible:ring-0 focus-visible:ring-offset-0"
+        />
+      </MeetingDialog>
     </section>
   );
 };
