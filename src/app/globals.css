@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -13,6 +14,7 @@
 
 .bg-hero {
   background-image: var(--bg-hero);
+  background-position: center;
 }
 
 .glassmorphism {
@@ -274,6 +276,11 @@
   }
 }
 
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
 @utility meeting-box {
   @layer base {
     @apply px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-md cursor-pointer;

@@ -14,7 +14,7 @@ type MeetingDialogProps = {
   onClick: () => void;
   onClose: () => void;
   image?: string;
-  btnIcon?: string;
+  btnIcon?: React.ReactNode;
 };
 const MeetingDialog = ({
   isOpen,
@@ -44,9 +44,7 @@ const MeetingDialog = ({
             className="bg-sidebar-primary text-sidebar-primary-foreground hover:text-accent focus-visible:ring-0 focus-visible:ring-offset-0"
             onClick={onClick}
           >
-            {btnIcon && (
-              <Image src={btnIcon} alt="btn_icon" width={12} height={12} />
-            )}
+            {btnIcon}
             {btnText || "Schedule Meeting"}
           </Button>
         </div>

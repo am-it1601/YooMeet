@@ -105,7 +105,7 @@ const CallList = ({ type }: { type: "upcoming" | "ended" | "recordings" }) => {
                 ? () => router.push(`${(meeting as CallRecording).url}`)
                 : () => router.push(`/meeting/${(meeting as Call).id}`)
             }
-            participantCount={(meeting as Call).state.participantCount || 1}
+            participantCount={(meeting as Call).state?.participantCount || 1}
           />
         ))
       ) : (

@@ -9,10 +9,10 @@ const Navbar = () => {
     <nav className="flex justify-between items-center fixed z-50 w-full bg-sidebar px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-3 pt-2">
         <Image
-          width={32}
+          width={36}
           height={32}
           alt="logo"
-          src={"/icons/logo.svg"}
+          src={"/images/logo_icon.png"}
           className="max-sm:size-10"
         />
         <p className="text-[28px] font-extrabold text-primary max-sm:hidden">

@@ -1,8 +1,4 @@
-1. Fixed the Width of the Sidebar in mobile view.
-2. Clock time should be visible as white.
 3. Use some different Font
-4. Change the Banner.
 5. use gradient background for meeting cards.
 6. Use Framer motion to animate Card and compoment loading.
 7. Use lucid react Icons 
-8. Update Css which does not exists.
