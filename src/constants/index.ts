@@ -1,4 +1,10 @@
-export const MENU_LINKS = [
+import { IconName } from "lucide-react/dynamic";
+
+export const MENU_LINKS: {
+  label: string;
+  route: string;
+  imgUrl: IconName;
+}[] = [
   {
     label: "Home",
     imgUrl: "home",

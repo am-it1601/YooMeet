@@ -10,11 +10,14 @@ const geistSans = Nunito({
   variable: "--font-geist-sans",
   weight: "variable",
   preload: true,
+  subsets: ["latin"],
 });
 
 const geistMono = Roboto_Mono({
   variable: "--font-geist-mono",
   preload: true,
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
