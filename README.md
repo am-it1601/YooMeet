@@ -25,49 +25,23 @@ Built with **Next.js + TypeScript**, it delivers real-time collaboration with **
 - **Others**: Azure Storage (local emulation with Azurite), WebRTC  
 
 ---
+## 📦 Deployment
 
-## 🚀 Getting Started
-
-Clone the repository:  
-```bash
-git clone https://github.com/am-it1601/YooMeet.git
-cd YooMeet
-Install dependencies:
-
-bash
-Copy code
-npm install
-# or
-yarn install
-Run the development server:
-
-bash
-Copy code
-npm run dev
-# or
-yarn dev
-Open http://localhost:3000 with your browser to see the app.
-
-📂 Project Structure
-bash
-Copy code
-/public       → Static assets  
-/src          → Core application code  
-/components  → UI components  
-/pages       → Next.js routes  
-📦 Deployment
 This project is deployed on Vercel for fast, production-ready hosting.
 Check it out here 👉 yoo-meet.vercel.app
 
-🤝 Contributing
+## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a PR.
 
-📧 Contact
+## 📧 Contact
+
 For inquiries or collaboration opportunities, reach out at:
 amit.agarwal@ciphercru.com
 
-📜 License
+## 📜 License
+
 This project is licensed under the MIT License.
 
-⭐ If you find this project useful, don’t forget to give it a star!
+# ⭐ If you find this project useful, don’t forget to give it a star!
