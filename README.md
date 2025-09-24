@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎥 YooMeet  
 
-## Getting Started
+YooMeet is a modern **video conferencing platform** designed for smooth, secure, and high-quality virtual meetings.  
+Built with **Next.js + TypeScript**, it delivers real-time collaboration with **HD video, screen sharing, chat, and recording** capabilities.  
 
-First, run the development server:
+🌐 Live Demo: [yoo-meet.vercel.app](https://yoo-meet.vercel.app)  
 
+---
+
+## ✨ Features
+- 🔒 Secure & reliable video conferencing  
+- 🎥 HD video & audio streaming  
+- 🖥️ Screen sharing support  
+- 💬 Real-time chat during meetings  
+- 📅 Upcoming & Previous meeting history  
+- 📼 Meeting recording functionality  
+- 🌙 Dark mode support  
+
+---
+
+## 🛠 Tech Stack
+- **Frontend**: Next.js, TypeScript, React  
+- **Styling**: CSS, Tailwind  
+- **Deployment**: Vercel  
+- **Others**: Azure Storage (local emulation with Azurite), WebRTC  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:  
 ```bash
+git clone https://github.com/am-it1601/YooMeet.git
+cd YooMeet
+Install dependencies:
+
+bash
+Copy code
+npm install
+# or
+yarn install
+Run the development server:
+
+bash
+Copy code
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 with your browser to see the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 Project Structure
+bash
+Copy code
+/public       → Static assets  
+/src          → Core application code  
+/components  → UI components  
+/pages       → Next.js routes  
+📦 Deployment
+This project is deployed on Vercel for fast, production-ready hosting.
+Check it out here 👉 yoo-meet.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a PR.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📧 Contact
+For inquiries or collaboration opportunities, reach out at:
+amit.agarwal@ciphercru.com
 
-## Learn More
+📜 License
+This project is licensed under the MIT License.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ If you find this project useful, don’t forget to give it a star!
